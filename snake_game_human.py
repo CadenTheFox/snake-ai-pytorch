@@ -61,13 +61,13 @@ class SnakeGame:
                 pygame.quit()
                 quit()
             if event.type == pygame.KEYDOWN:
-                if event.key == pygame.K_LEFT:
+                if event.key == pygame.K_A:
                     self.direction = Direction.LEFT
-                elif event.key == pygame.K_RIGHT:
+                elif event.key == pygame.K_D:
                     self.direction = Direction.RIGHT
-                elif event.key == pygame.K_UP:
+                elif event.key == pygame.K_W:
                     self.direction = Direction.UP
-                elif event.key == pygame.K_DOWN:
+                elif event.key == pygame.K_S:
                     self.direction = Direction.DOWN
         
         # 2. move
